@@ -24,8 +24,8 @@ class Writer:
     high_quality: (bool) If true, the quality of the output video will be
         higher, but it will take longer to render (about twice as long).
         The lower quality writer uses OpenCV's VideoWriter.
-        The higher quality writer writes all the frames to PNG images,
-        then combines those images into a video using FFmpeg.
+        The higher quality writer writes all the frames to PNG image files,
+        then combines those image files into a video using FFmpeg.
   """
   def __init__(self, fps, high_quality=True):
     self.writer = (HighQualityWriter(fps) if high_quality else

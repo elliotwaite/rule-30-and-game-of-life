@@ -7,7 +7,7 @@ Video demo: https://www.youtube.com/watch?v=IK7nBOLYzdE
 
 ## Requirements
 
-The following Python packages are required (I use a combination of Conda and Pip, but feel free to use whatever package managers you want):
+The following Python packages are required (I use a combination of Conda and Pip):
 ```
 conda install colour imageio numpy opencv scipy tqdm
 
@@ -23,7 +23,7 @@ To install ffmpeg:
 ```
 brew install ffmpeg
 ```
-Note: If you want use a version of ffmpeg other than the Homebrew version, you'll have to change the `FFMPEG_PATH` constant in the `video_writer.py` file to the path where your ffmpeg executable file is installed.
+Note: If you want use a version of ffmpeg other than the Homebrew version, you'll have to change the `FFMPEG_PATH` value in `video_writer.py` to the path where your ffmpeg executable file is installed.
 
 ## Running the Code
 
@@ -48,4 +48,4 @@ HIGH_QUALITY = True
 
 If you set `HIGH_QUALITY = False`, a slightly lower quality `.avi` video will be generated, but it will take less time to render, usually about half the time of the high-quality version. This is can be useful for generating preview versions when still experimenting with different settings.
 
-The low quality renderer uses OpenCV's VideoWriter. The high quality renderer writes all the frames to PNG images, then combines those images into a video using FFmpeg.
+The low quality renderer uses OpenCV's VideoWriter. The high quality renderer writes all the frames to PNG image files, then combines those image files into a video using FFmpeg.
