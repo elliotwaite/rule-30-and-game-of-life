@@ -3,9 +3,11 @@
 This code generates a 2D animation of a 1D cellular automaton, Rule 30 (or other rules), being fed as input to a 2D cellular automaton, Conway’s Game of Life.
 
 Video demo of Rule 30: https://youtu.be/IK7nBOLYzdE
+
 [<img src="https://img.youtube.com/vi/IK7nBOLYzdE/hqdefault.jpg">](https://www.youtube.com/watch?v=IK7nBOLYzdE)
 
 Video demo of Rule 110: https://youtu.be/P2uhhAXd7PI
+
 [<img src="https://img.youtube.com/vi/P2uhhAXd7PI/hqdefault.jpg">](https://www.youtube.com/watch?v=P2uhhAXd7PI)
 
 ## Requirements
