@@ -54,3 +54,7 @@ HIGH_QUALITY = True
 If you set `HIGH_QUALITY = False`, a slightly lower quality `.avi` video will be generated, but it will take less time to render, usually about half the time of the high-quality version. This is can be useful for generating preview versions when still experimenting with different settings.
 
 The low quality renderer uses OpenCV's VideoWriter. The high quality renderer writes all the frames to PNG image files, then combines those image files into a video using FFmpeg.
+
+## License
+
+[MIT](LICENSE)
