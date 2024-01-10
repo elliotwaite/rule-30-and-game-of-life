@@ -25,8 +25,7 @@ import video_writer
 # YouTube.
 VIDEO_WIDTH = 3840
 VIDEO_HEIGHT = 2160
-# SECS = int(60 * 3.5)  # 3 mins 30 secs.
-SECS = 5
+SECS = int(60 * 3.5)  # 3 mins 30 secs.
 PIXEL_SIZE = 6
 OUTPUT_PATH = 'videos/youtube-3m-30s-6px.mp4'
 
