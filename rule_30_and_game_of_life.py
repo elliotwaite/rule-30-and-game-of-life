@@ -25,7 +25,8 @@ import video_writer
 # YouTube.
 VIDEO_WIDTH = 3840
 VIDEO_HEIGHT = 2160
-SECS = int(60 * 3.5)  # 3 mins 30 secs.
+# SECS = int(60 * 3.5)  # 3 mins 30 secs.
+SECS = 5
 PIXEL_SIZE = 6
 OUTPUT_PATH = 'videos/youtube-3m-30s-6px.mp4'
 
@@ -113,10 +114,10 @@ class Rule30AndGameOfLife:
     color_list += [colour.Color('black')]
     rgb_list = [c.rgb for c in color_list]
 
-    self.colors = (np.array(rgb_list, np.float) * 255).astype(np.uint8)
+    self.colors = (np.array(rgb_list, np.float64) * 255).astype(np.uint8)
 
     self.decay = np.full((self.height, self.width), len(self.colors) - 1,
-                         np.int)
+                         np.int_)
 
     self.rgb = None
 
