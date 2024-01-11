@@ -1,0 +1,16 @@
+# To create: conda env create --file environment.yml
+# To update: conda env update --file environment.yml --prune
+# To remove: conda env remove --name rule-30-and-game-of-life --yes
+name: rule-30-and-game-of-life
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12.*
+  - colour
+  - imageio
+  - imutils
+  - numpy
+  - opencv
+  - scipy
+  - tqdm
